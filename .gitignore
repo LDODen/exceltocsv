@@ -1,0 +1,7 @@
+__pycache__/
+build/
+dist/
+excel.spec
+excel_merge.spec
+exceltocsv.spec
+*.xls

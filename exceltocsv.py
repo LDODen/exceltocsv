@@ -19,7 +19,12 @@ def process_file(inputfile):
     for row_number in range(sheet.nrows):
         csv_out.writerow(sheet.row_values(row_number))
     fh.close()
+    xl.release_resources()
+    # fh.release_resources()
+    # csv_out.release_resources()
     del xl
+    # del fh
+    # del csv_out
 
 
 if __name__ == "__main__":
